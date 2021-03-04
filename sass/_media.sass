@@ -1,0 +1,48 @@
+@media   ( max-width: 1200px  )
+  .container
+    max-width: 960px
+
+@media   ( max-width: 992px )
+  .container
+    max-width: 700px
+  .header
+    .logo__img
+      width: 132px
+    &__search
+      margin-left: auto
+      max-width: 340px
+    &-top
+      padding: 30px 0
+    &-bot
+      &__links
+        padding: 22px 0
+  .searche
+    &__input
+      width: 340px
+
+@media   ( max-width: 768px )
+  .container
+    max-width: 576px
+    width: 92%
+  .header
+    &-bot, &__search, &__user
+      display: none
+  .button-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    width: 16px
+    height: 11px
+    border: 0
+    background-color: $light
+    cursor: pointer
+    padding: 0
+    &__line
+      width: 16px
+      height: 1px
+      background-color: $tc
+
+@media   ( max-width: 576px )
+  .logo__img
+    width: 99px

@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best tour plan</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -32,7 +31,7 @@
               <img src="img/search.svg" alt="icon: search" />
             </button>
           </form>
-          <a href="#" class="user">
+          <a href="#" class="user header__user">
             <img
               src="img/user-avatar.jpg"
               class="user__avatar"
@@ -40,8 +39,15 @@
             />
             <span class="user__name">Nathan</span>
           </a>
+          <button class="button-menu button-menu__top">
+            <span class="button-menu__line"></span
+            ><span class="button-menu__line"></span
+            ><span class="button-menu__line"></span>
+          </button>
         </div>
-        <nav class="header-bot">
+      </div>
+      <nav class="header-bot">
+        <div class="container">
           <ul class="header-bot__links">
             <li class="header-bot__item">
               <a class="header-bot__link" href="#">All Deals</a>
@@ -65,8 +71,9 @@
               <a class="header-bot__link" href="#">Rodrigues</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+        <!-- /.container -->
+      </nav>
     </header>
   </body>
 </html>

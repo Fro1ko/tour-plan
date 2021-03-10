@@ -408,7 +408,7 @@ template {
   line-height: 18px;
 }
 
-.button-menu__top {
+.button-menu {
   display: none;
 }
 
@@ -557,9 +557,14 @@ template {
 }
 
 .stars {
+  height: 9px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 4px;
+}
+
+.stars-img {
+  margin-bottom: 5px;
 }
 
 .offer {

@@ -593,6 +593,7 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .rating__counter_little {

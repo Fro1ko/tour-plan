@@ -12,3 +12,5 @@ const swiper = new Swiper('.swiper-container', {
     onlyInViewport:true,
   },
 });
+
+angular.module('MyApp', ['ymaps']);

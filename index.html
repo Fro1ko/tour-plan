@@ -119,7 +119,7 @@
           <!-- /.hotel-info__rating -->
         </div>
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel-slider">
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
@@ -208,13 +208,13 @@
               <!-- /.button booking-button -->
             </div>
             <!-- /.booking -->
-            <div
-              class="map"
-              ng-init="coords=[55.21, 34.30];center=[55.21, 34.30];zoom=10"
-            >
-              <yandex-map center="center" zoom="zoom">
-                <ymap-marker coordinates="coords"></ymap-marker>
-              </yandex-map>
+            <div class="map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A708add6fd41c5bb0b60b2cccb99174f0e9778a8ac3be8f22d0b092dffe0add90&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameborder="0"
+              ></iframe>
             </div>
           </div>
           <!-- /.map -->
@@ -225,7 +225,6 @@
     </section>
     <!-- /.hotel -->
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/angular-ymaps.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

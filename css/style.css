@@ -693,7 +693,6 @@ template {
 
 .booking__room {
   margin-top: 3px;
-  padding-right: 4px;
 }
 
 .booking__text:first-child {
@@ -701,7 +700,11 @@ template {
 }
 
 .booking__text:last-child .booking__icon {
-  margin-right: 8px;
+  padding-right: 11px;
+}
+
+.booking__icon {
+  padding-right: 5px;
 }
 
 .booking__info {
@@ -796,7 +799,8 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  border-radius: 10px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -861,6 +865,7 @@ template {
     width: 340px;
     height: 210px;
     padding-right: 20px;
+    padding-left: 24px;
   }
   .booking__room {
     padding-right: 0;
@@ -874,6 +879,9 @@ template {
   .map {
     width: 340px;
     height: 210px;
+  }
+  .call-center {
+    margin-bottom: 16px;
   }
 }
 
@@ -915,6 +923,9 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .hotel-slider {
+    width: 100%;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -938,6 +949,15 @@ template {
   }
   .hotel-info__name {
     margin-top: 10px;
+  }
+  .booking {
+    width: 49%;
+  }
+  .booking-button {
+    width: 100%;
+  }
+  .map {
+    width: 49%;
   }
 }
 

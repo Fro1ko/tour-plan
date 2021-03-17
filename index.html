@@ -121,7 +121,7 @@
         <div class="hotel-grid">
           <div class="slider hotel-slider">
             <!-- Slider main container -->
-            <div class="swiper-container">
+            <div class="swiper-container hotel-grid__swip">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -160,7 +160,6 @@
                     alt=""
                   />
                 </div>
-                ...
               </div>
 
               <!-- If we need navigation buttons -->
@@ -238,8 +237,53 @@
         </form>
       </div>
     </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">What people think about us</h2>
+        <!-- Slider main container -->
+
+        <div class="swiper-container reviews__swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide reviews-block">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/re-ava.jpg"
+                    alt="Megan Fox"
+                    class="reviews-block__avatar"
+                  />
+                  <span class="reviews-block__name">Megan Fox</span>
+                  <span class="reviews-block__date">Stayed 18 Nov, 2019</span>
+                  <img
+                    src="img/star.svg"
+                    alt="reviews"
+                    class="reviews-block__stars"
+                  />
+                </div>
+                <p class="reviews-block__review">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="reviews-button reviews-button--prev"></button>
+          <button class="reviews-button reviews-button--next"></button>
+        </div>
+      </div>
+      <!-- /.reviews-container -->
+    </section>
+    <!-- /.reviews -->
     <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      src="https://api-maps.yandex.ru/2.1/?apikey=ea0671ac-4ad9-4e3d-83dd-80ef41c3bfdc&lang=ru_RU"
       type="text/javascript"
     ></script>
     <script src="js/swiper-bundle.min.js"></script>

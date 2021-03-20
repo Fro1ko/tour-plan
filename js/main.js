@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.hotel-grid__swip', {
   // Optional parameters
   loop: true,
 
@@ -28,21 +28,14 @@ ymaps.ready(init);
     myMap.geoObjects.add(myPlacemark);
 };
 
-const swiperReviews = new Swiper('.reviews__swiper-container', {
+const Reviews = new Swiper('.reviews__swiper-container', {
   // Optional parameters
   loop: true,
 
-  autoplay: {
-    delay: 4000
-  },
-
   // Navigation arrows
   navigation: {
-    nextEl: '.reviews-button--next',
+    nextEl: '.reviews-button--next  ',
     prevEl: '.reviews-button--prev',
   },
-  keyboard: {
-    enabled: true,
-    onlyInViewport:true,
-  },
+  
 });

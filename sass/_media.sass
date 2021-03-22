@@ -16,6 +16,10 @@
   .subscribe
     &__input
       padding-left: 33px
+  .activities
+    .card
+      width: 225px
+      min-height: 225px
 @media   ( max-width: 992px )
   .container
     max-width: 700px
@@ -67,6 +71,7 @@
   .call-center
     margin-bottom: 16px
   .reviews
+    margin-bottom: 94px
     &__title
       font-size: 30px
       line-height: 38px
@@ -79,7 +84,7 @@
         padding-left: 65px
         padding-right: 60px
     &-button
-      top: 39%
+      top: 50%
       &--prev
         left: 1px
       &--next
@@ -93,13 +98,21 @@
     &__wrapper
       flex-wrap: wrap
     .card
-      width: 339px
+      width: 340px
+      min-height: 256px
       margin-bottom: 20px
       &__title
         &-two
           width: 205px
         &-four
           width: 205px
+  .reviews
+    &-slider
+      &__item
+        &::before
+          display: none
+        &::after
+          display: none
 @media   ( max-width: 768px )
   .container
     max-width: 576px
@@ -149,7 +162,8 @@
     width: 49%
   .activities
     .card
-      width: 280px
+      width: 255px
+
 @media   ( max-width: 576px )
   .container
     width: 87%
@@ -215,6 +229,7 @@
     &__input
       padding-left: 19px
   .reviews
+    margin-bottom: 70px
     &__title
       font-size: 18px
       line-height: 23px
@@ -230,13 +245,32 @@
         padding-right: 23px
         text-align: start
     &-button
-      top: 6%
+      top: 9%
       margin-top: 1px
       &--prev
         left: 33px
         transf
       &--next
         right: 35px
+  .activities
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
+    .card
+      width: 100%
+      &__button
+        padding-right: 20px
+      &__one
+        order: 1
+      &__two
+        order: 3
+      &__three
+        order: 2
+        margin-bottom: 28px
+      &__four
+        order: 4
+
 @media ( min-width: 325px ) and ( max-width: 576px )
   .hotel
     &-slider

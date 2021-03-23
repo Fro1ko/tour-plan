@@ -39,3 +39,9 @@ const Reviews = new Swiper('.reviews__swiper-container', {
   },
   
 });
+
+var menuButton = document.querySelector(".button-menu")
+menuButton.addEventListener("click", function () {
+  console.log("click button");
+  document.querySelector(".header-bot").classList.toggle("header-bot--visible");
+})

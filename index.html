@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header__mobile--fixed">
       <div class="container">
         <div class="header-top">
           <a href="#" class="logo"
@@ -23,7 +23,10 @@
               alt="logo: Best tour plan"
               class="logo__img"
           /></a>
-          <form action="#" class="search header__search">
+          <form
+            action="#"
+            class="search header__search header__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -32,7 +35,7 @@
               <img src="img/search.svg" alt="icon: search" />
             </button>
           </form>
-          <a href="#" class="user header__user">
+          <a href="#" class="user header__user header__user--mobile--hidden">
             <img
               src="img/user-avatar.jpg"
               class="user__avatar"
@@ -50,6 +53,33 @@
       <nav class="header-bot">
         <div class="container">
           <ul class="header-bot__links">
+            <li class="navbar-menu--item navbar-menu--item--mobile--visible">
+              <a
+                href="#"
+                class="user header__user header__user--mobile--visible"
+              >
+                <img
+                  src="img/user-avatar.jpg"
+                  class="user__avatar"
+                  alt="avatar: Nathan"
+                />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu--item navbar-menu--item--mobile--visible">
+              <form
+                action="#"
+                class="search header__search header__search--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                /><button class="search__button">
+                  <img src="img/search.svg" alt="icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="header-bot__item">
               <a class="header-bot__link" href="#">All Deals</a>
             </li>
@@ -340,7 +370,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities__wrapper">
-          <div class="card card__one">
+          <div class="card card-one">
             <img
               src="img/card1.jpg"
               alt="The curious corner of chamarel"
@@ -351,7 +381,7 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card card__two">
+          <div class="card card-two">
             <img
               src="img/card2.jpg"
               alt="Gymkhana club golfcourse"
@@ -362,7 +392,7 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card card__three">
+          <div class="card card-three">
             <img
               src="img/card3.jpg"
               alt="Tamarind falls hikingtrip - full day"
@@ -373,7 +403,7 @@
             </h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card card__four">
+          <div class="card card-four">
             <img
               src="img/card4.jpg"
               alt="The blue marine discovery quest"
@@ -466,7 +496,7 @@
           </div>
           <div class="footer__list footer__legal">
             <h3 class="footer__title">LEGAL INFORMATION</h3>
-            <div class="footer__ul">
+            <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions </a>
               </li>
@@ -479,7 +509,7 @@
               <li class="footer__item">
                 <a href="#" class="footer__link">Privacy</a>
               </li>
-            </div>
+            </ul>
           </div>
           <div class="footer__contact-details">
             <h3 class="footer__title">Contact Details</h3>

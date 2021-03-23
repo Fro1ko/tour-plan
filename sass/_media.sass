@@ -17,9 +17,31 @@
     &__input
       padding-left: 33px
   .activities
+    padding-bottom: 49px
     .card
       width: 225px
       min-height: 225px
+  .footer
+    padding-top: 52px
+    &-wrapper
+      grid-template-columns: repeat(4, minmax(172px, 1fr))
+    &__logo
+      grid-row: 1/2
+      width: 96px
+      height: 108px
+    &__social
+      &-network
+        grid-row: 1/2
+        grid-column: span 4
+        align-self: center
+        transform: translate(-91px, 18px)
+    &__categories
+      grid-row: 2/3
+    &__contact
+      &-details
+        grid-row: 3
+      &-form
+        grid-row: 4
 @media   ( max-width: 992px )
   .container
     max-width: 700px
@@ -113,6 +135,51 @@
           display: none
         &::after
           display: none
+  .footer
+    &-wrapper
+      margin-bottom: 19px
+    &__title
+      &--inline
+        margin: 0 43px 0 79px
+    &__additional
+      grid-column: 2/4
+      grid-row: 2
+      padding-top: 24px
+    &__legal
+      padding-left: 99px
+      padding-top: 24px
+      grid-column: 3/5
+      grid-row: 2
+    &__categories
+      padding-top: 25px
+    &__contact
+      &-details
+        margin-left: 4px
+        padding-top: 46px
+        grid-row: 3
+        grid-column: 1/4
+      &-form
+        grid-column: 1/4
+        padding-top: 45px
+    &__form
+      justify-content: start
+    &__input
+      &:first-child
+        margin-right: 28px
+    &__textarea
+      min-height: 123px
+      width: 94%
+    &__button
+      margin-left: 1px
+    &__info
+      transform: translateX(282px)
+    &__rules
+      padding: 0
+      margin: 0
+      margin-top: 7px
+    &__rule
+      &:first-child
+        margin-left: 0
 @media   ( max-width: 768px )
   .container
     max-width: 576px
@@ -163,7 +230,17 @@
   .activities
     .card
       width: 255px
-
+  .footer
+    &__legal
+      grid-row: 3
+      padding: 0
+      grid-column: 1/3
+    &__contact
+      &-details
+        grid-row: 4
+    &__contact
+      &-form
+        grid-row: 5
 @media   ( max-width: 576px )
   .container
     width: 87%
@@ -265,12 +342,92 @@
         order: 1
       &__two
         order: 3
+        .card
+          &__button
+            margin-bottom: 2px
       &__three
         order: 2
         margin-bottom: 28px
       &__four
         order: 4
-
+        .card
+          &__button
+            margin-bottom: 4px
+  .footer
+    padding-top: 35px
+    &-wrapper
+      grid-template-columns: 1fr
+      margin: 0
+    &__logo
+      grid-column: 1fr
+      grid-row: 1fr
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        transform: none
+        padding-top: 15px
+        flex-direction: column
+      &-links
+        margin-left: 3px
+    &__title
+      &--inline
+        margin: 0 0 21px 0
+    &__legal
+      grid-row: 3
+      grid-column: 1
+      padding: 0
+    &__additional
+      padding-top: 1px
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      padding-top: 4px
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        padding-top: 24px
+        grid-row: 6
+        grid-column: 1
+        .footer
+          &__item
+            margin-left: 3px
+            margin-bottom: 21px
+            &:nth-child(2)
+              img
+                margin-right: 8px
+            &:nth-child(3)
+              img
+                margin-right: 10px
+            img
+              margin-right: 12px
+      &-form
+        grid-row: 7
+        grid-column: 1
+        padding-top: 23px
+        .footer
+          &__title
+            margin-bottom: 15px
+    &__text
+      margin-bottom: 19px
+    &__input
+      width: 100%
+      &:first-child
+        margin-right: 0px
+    &__textarea
+      width: 100%
+      margin-bottom: 46px
+    &__info
+      transform: translate(-161px,-50px)
+    &__ditails
+      padding: 0
+      flex-wrap: wrap
+    &__rules
+      margin-top: 4px
+      margin-bottom: 10px
+    &__rule
+      margin-right: 2px
 @media ( min-width: 325px ) and ( max-width: 576px )
   .hotel
     &-slider

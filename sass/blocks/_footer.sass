@@ -14,7 +14,7 @@
     height: 192px
     grid-row: 1/3
     align-self: stretch
-    margin-top: 21px
+    margin-top: 11px
   &__categories
     grid-row: 1/4
   &__social
@@ -130,21 +130,36 @@
     justify-content: space-between
 
   &__ditails
-    display: flex
-    justify-content: space-between
-    padding-top: 12px
-    img
-      width: 136px
-      height: 22px
+    grid-row: 5
+    grid-column: 2/4
+    margin-top: 35px
   &__rules
-    list-style: none
     display: flex
-    margin: auto
-    padding-top: 5px
+    justify-content: center
+    padding: 0
+    list-style: none
+  &__image
+    grid-row: 5
+    grid-column: 4
+    transform: translate(119px,44px)
   &__rule
     font-weight: 400
     font-size: 12px
     line-height: 15px
     margin: 0 7px
-    &:first-child
-      margin-left: 100px
+
+  //   img
+  //     width: 136px
+  //     height: 22px
+  // &__rules
+  //   list-style: none
+  //   display: flex
+  //   margin: auto
+  //   padding-top: 5px
+  // &__rule
+  //   font-weight: 400
+  //   font-size: 12px
+  //   line-height: 15px
+  //   margin: 0 7px
+  //   &:first-child
+  //     margin-left: 100px

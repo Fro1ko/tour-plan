@@ -171,8 +171,9 @@
     &__form
       justify-content: start
     &__input
+      width: 44%
       &:first-child
-        margin-right: 28px
+        margin-right: 35px
     &__textarea
       min-height: 123px
       width: 94%
@@ -242,6 +243,8 @@
         margin: 8px
       &--visible
         display: block
+        max-height: 100%
+        overflow-y: auto
   .search
     &__input
       margin-left: 5px
@@ -317,6 +320,9 @@
         &--mobile
           &--visible
             display: block
+  .body
+    &-invisible
+      overflow: hidden
 @media   ( max-width: 576px )
   .container
     width: 87%

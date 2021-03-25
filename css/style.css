@@ -1168,6 +1168,7 @@ template {
 }
 
 .footer__social-links {
+  margin-left: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1247,7 +1248,7 @@ template {
 .footer__textarea {
   background-color: #fff;
   border-radius: 4px;
-  padding: 18px 23px 56px 23px;
+  padding: 18px 23px 75px 23px;
   border: none;
   width: 100%;
   font-size: 12px;
@@ -1268,7 +1269,7 @@ template {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
 }
 
@@ -1307,6 +1308,7 @@ template {
 }
 
 .footer__input {
+  width: 47%;
   outline: none;
   background-color: #fff;
   border-radius: 4px;
@@ -1327,7 +1329,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   background-color: #EC1F46;
-  padding: 17px 65px;
+  padding: 19px 63px 16px 67px;
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -1377,8 +1379,8 @@ template {
   grid-row: 5;
   -ms-grid-column: 4;
   grid-column: 4;
-  -webkit-transform: translate(119px, 44px);
-          transform: translate(119px, 44px);
+  -webkit-transform: translate(119px, 41px);
+          transform: translate(119px, 41px);
 }
 
 .footer__rule {
@@ -1647,8 +1649,11 @@ template {
         -ms-flex-pack: start;
             justify-content: start;
   }
+  .footer__input {
+    width: 44%;
+  }
   .footer__input:first-child {
-    margin-right: 28px;
+    margin-right: 35px;
   }
   .footer__textarea {
     min-height: 123px;
@@ -1748,6 +1753,8 @@ template {
   }
   .header-bot--visible {
     display: block;
+    max-height: 100%;
+    overflow-y: auto;
   }
   .search__input {
     margin-left: 5px;
@@ -1855,6 +1862,9 @@ template {
   }
   .navbar-menu--item--mobile--visible {
     display: block;
+  }
+  .body-invisible {
+    overflow: hidden;
   }
 }
 

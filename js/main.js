@@ -44,4 +44,11 @@ var menuButton = document.querySelector(".button-menu")
 menuButton.addEventListener("click", function () {
   console.log("click button");
   document.querySelector(".header-bot").classList.toggle("header-bot--visible");
+});
+
+var bodyInvisible = document.querySelector(".button-menu")
+menuButton.addEventListener("click", function () {
+  console.log("click button");
+  document.querySelector("body").classList.toggle("body-invisible");
 })
+
